@@ -1,0 +1,40 @@
+html {
+    display: grid;
+}
+
+body {
+    margin: auto;
+    height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    width: 100vw;
+}
+
+.big-text {
+    font-size: 8rem;
+    border: 1rem solid #256EFF;
+    font-weight: 700;
+    color: #256EFF;
+    line-height: 10rem;
+    height: 10rem;
+    width: 40rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid-text {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.small-text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.copyright {
+    font-size: .75rem;
+    font-style: italic;
+    font-weight: 100;
+} 
