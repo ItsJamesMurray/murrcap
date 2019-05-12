@@ -1,18 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="murrcap.css">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:100,300,700" rel="stylesheet">
 
     <title>Murrcap</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+
+        .container{
+            height: 100vh;
+            text-align: center;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "a"
+                "b"
+                ;
+        }
+
+        h1 {
+            font-size: 5rem;
+            border: .5rem solid black;
+            padding: 5px;
+
+            grid-area: a;
+            margin: auto auto 10px auto;
+
+        }
+
+        footer {
+            margin: 10px auto auto auto;
+            grid-area: b
+        }
+
+        a {
+            color: #999;
+        }
+
+        a:hover, a:active {
+            color: #000;
+        }
+
+
+        @media only screen and (max-width: 737px) {
+            h1 {
+                position: relative;
+                top: calc(50% - 72px);
+                left: calc(50% - 105px);
+                width: 200px;
+                height: 55px;
+
+
+            }
+        }
+
+
+
+
+    </style>
 </head>
-<body>
-    <p class="big-text">murrcap</p>
-    <p class="mid-text">We are an early stage VC. <br> We partner with founders to accelerate the growth of their business</p>
-    <p class="small-text">Chicago, IL | Kansas City, MO | London, UK</p>
-    <p class="copyright">© 2019. All rights reserved.</p>
+<body data-rsssl=1>
+
+
+        <div class="container">
+
+            <h1 class="text-center">murrcap</h1>
+
+
+            <footer><a href="mailto:hello@murrcap.com">hello@murrcap.com</a></footer>
+        </div>
+
+
 </body>
-</html> 
+</html>
