@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Murrcap | Investing in visionaries</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <style>
         body {
-            font-family: "Prompt", serif;
+            font-family: "Work Sans", serif;
             height: 100vh;
             text-align: center;
             display: flex;
             flex-direction: column;
-            background: linear-gradient(to bottom right, black 20%, #34ffcc 100%);
         }
 
         .container {
@@ -28,35 +26,43 @@
 
         h1 {
             font-size: 2.5rem;
-            border: 0.5rem solid white;
-            padding: 5px;
-            color: white;
+            border: 0.5rem solid;
+            padding: 15px;
         }
 
         a {
+            text-decoration: none;
             color: white;
         }
 
         a:hover,
         a:active {
-            color: #34ffcc;
+            color: white;
         }
 
         ul li {
             display: inline;
         }
     </style>
+    <script>
+        function myFunction() {
+            var colors = ['#065aa7', '#fab800', '#e11d40'];
+            var color1 = colors[Math.floor(Math.random() * colors.length)];
+            var colors = colors.filter(e => e !== color1)
+            var color2 = colors[Math.floor(Math.random() * colors.length)];
+            var colors = colors.filter(e => e !== color2)
+            var color3 = colors[0]
+            document.getElementById('murrcap').style.color = color1;
+            document.getElementById('murrcap').style.borderColor = color2;
+            document.getElementById('background').style.backgroundColor = color3;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="myFunction()" id="background">
     <div class="container">
-        <h1>murrcap</h1>
-        🔥<a href="mailto:hello@murrcap.com">hello@murrcap.com</a>🔥
-        <!-- <ul>
-            <li><a>🤘Strumm🤘</a> |</li>
-            <li><a>🕯️NonScents Candles🕯️</a> |</li>
-            <li><a>💰1Minute-Offers💰</a></li>
-        </ul> -->
+        <h1 id="murrcap">murrcap</h1>
+        🔥<a id="murrcap" href="mailto:hello@murrcap.com">hello@murrcap.com</a>🔥
     </div>
 </body>
 
