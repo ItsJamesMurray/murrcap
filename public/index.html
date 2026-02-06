@@ -3,67 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Murrcap | Investing in visionaries</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet" />
-
+    <title>Murrcap</title>
+    <meta name="description" content="Consulting and advisory." />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300&display=swap" rel="stylesheet" />
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: "Work Sans", serif;
-            height: 100vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            background: #eae4dc;
+            color: #2f2a24;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            padding: 3rem;
         }
-
-        .container {
-            margin: auto;
-        }
-
+        main { display: flex; align-items: flex-end; }
         h1 {
-            font-size: 2.5rem;
-            border: 0.5rem solid;
-            padding: 15px;
+            font-family: "Instrument Serif", serif;
+            font-size: clamp(4rem, 15vw, 9rem);
+            font-weight: 400;
+            line-height: 0.85;
         }
-
-        a {
-            text-decoration: none;
-            color: white;
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3rem;
+            font-size: 0.9rem;
+            color: #6b6258;
         }
-
-        a:hover,
-        a:active {
-            color: white;
-        }
-
-        ul li {
-            display: inline;
-        }
+        a { color: #2f2a24; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
-    <script>
-        function myFunction() {
-            var colors = ['#065aa7', '#fab800', '#e11d40'];
-            var color1 = colors[Math.floor(Math.random() * colors.length)];
-            var colors = colors.filter(e => e !== color1)
-            var color2 = colors[Math.floor(Math.random() * colors.length)];
-            var colors = colors.filter(e => e !== color2)
-            var color3 = colors[0]
-            document.getElementById('murrcap').style.color = color1;
-            document.getElementById('murrcap').style.borderColor = color2;
-            document.getElementById('background').style.backgroundColor = color3;
-        }
-    </script>
 </head>
-
-<body onload="myFunction()" id="background">
-    <div class="container">
-        <h1 id="murrcap">murrcap</h1>
-        🔥<a id="murrcap" href="mailto:hello@murrcap.com">hello@murrcap.com</a>🔥
-    </div>
+<body>
+    <main><h1>Murrcap</h1></main>
+    <footer>
+        <span>Consulting & advisory</span>
+        <a href="mailto:hello@murrcap.com">hello@murrcap.com</a>
+    </footer>
 </body>
-
 </html>
